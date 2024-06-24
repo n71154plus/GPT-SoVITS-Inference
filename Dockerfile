@@ -32,7 +32,7 @@ RUN if [ "$IMAGE_TYPE" != "elite" ]; then \
         chmod +x /workspace/Docker/download.sh && \
         /workspace/Docker/download.sh && \
         python /workspace/Docker/download.py && \
-        pip install -i https://pypi.tuna.tsinghua.edu.cn/simple nltk && \
+        pip install nltk && \
         python -m nltk.downloader averaged_perceptron_tagger cmudict; \
     fi
 
